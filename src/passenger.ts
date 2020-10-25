@@ -1,6 +1,6 @@
 import faker from 'faker'
-
-class Passenger { 
+ 
+export class Passenger { 
     private readonly name: string
     private readonly location: {
         lat: string,

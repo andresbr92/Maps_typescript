@@ -1,1 +1,4 @@
-let prueba: number = 1
+import { Passenger } from "./passenger"
+
+const p = new Passenger()
+console.log (p)
