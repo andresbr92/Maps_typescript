@@ -4,6 +4,9 @@ export abstract class Person {
         lat: string,
         lng: string,
     }
+    get getLocation() { 
+        return this.location
+    }
 
     constructor(name: string, location: { lat: string, lng: string }) { 
         this.name = name,
