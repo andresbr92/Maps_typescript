@@ -1,16 +1,14 @@
 import faker from 'faker'
+import { Person } from './person'
  
-export class Passenger { 
-    private readonly name: string
-    private readonly location: {
-        lat: string,
-        lng: string,
-    }
+export class Passenger extends Person { 
+   
     constructor() {
-        this.name = faker.name.firstName()
-        this.location = {
+        super (faker.name.firstName(),{
             lat: faker.address.latitude(),
             lng: faker.address.longitude(),
-        }
+        })
+        
+        
      }
 }

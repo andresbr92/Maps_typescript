@@ -1,4 +1,11 @@
-import { Passenger } from "./passenger"
 
-const p = new Passenger()
-console.log (p)
+new google.maps.Map(
+    document.getElementById("map")!,
+    {
+        zoom: 5,
+        center: {
+            lat:0,
+            lng:0
+        },
+    }
+)
